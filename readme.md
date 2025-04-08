@@ -52,3 +52,4 @@ This project is mantained by:
 ## Contributions
 
 Feel free to contribute to the project by opening issues, submitting pull requests, or providing feedback. Your contributions are highly welcome!
+# spam_email_classifier

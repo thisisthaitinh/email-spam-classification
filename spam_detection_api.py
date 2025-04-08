@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from joblib import load
 import nltk
+from nltk.corpus import stopwords
 import string
 import re
 
@@ -18,9 +19,9 @@ app.add_middleware(
 )
 
 #pre-processing
-stop_words = set(nltk.corpus.stopwords.words("english"))
+stop_words = set(stopwords.words("english"))
 spetial_chars = set(string.printable) - set(string.ascii_letters) - set(" ")
-escaped_chars = [re.escape(c) for c in spetial_chars]
+escaped_chars = [re.escape(c)   for c in spetial_chars]
 regex = re.compile(f"({'|'.join(escaped_chars)})")
 stemmer = nltk.stem.porter.PorterStemmer()
 url_regex = re.compile("(?P<url>https?://[^\s]+)")
