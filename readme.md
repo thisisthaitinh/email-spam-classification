@@ -1,6 +1,6 @@
 # Email Spam Classification
 
-![logo](./demo.png)
+![logo](demo.png)
 
 This repository contains a machine learning model for detecting spam emails using Natural Language Processing techniques and Semi-supervised learning, such as Label Propagation, Label Spreading and Self-Learning. The goal is to create an effective and efficient spam detection system that can classify emails as spam or non-spam with high accuracy.
 
